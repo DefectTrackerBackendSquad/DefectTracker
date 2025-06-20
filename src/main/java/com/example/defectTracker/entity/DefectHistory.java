@@ -26,7 +26,8 @@ public class DefectHistory {
 
     private String defectStatus;
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToOne
+//            (fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "defect_id")
     private Defect defect;
 
