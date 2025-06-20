@@ -11,11 +11,11 @@ public class UserPrivilege {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "privilege_id", nullable = false)
     private Privilege privilege;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "project_allocation_id")
     private ProjectAllocation projectAllocation;
 }

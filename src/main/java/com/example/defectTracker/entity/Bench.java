@@ -15,7 +15,7 @@ public class Bench {
     private int availability;
     private int allocated;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "userId")
     private User user;
 }

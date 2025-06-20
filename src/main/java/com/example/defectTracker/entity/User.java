@@ -22,7 +22,7 @@ public class User {
     private Date joinDate;
     private boolean userStatus;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name="designationId")
     private Designation designation;
 }

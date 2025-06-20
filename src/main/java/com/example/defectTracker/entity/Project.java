@@ -19,7 +19,7 @@ public class Project {
     private Date startDate;
     private Date endDate;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     private User user;
 
