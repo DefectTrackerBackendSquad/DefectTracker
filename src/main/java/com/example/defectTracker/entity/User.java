@@ -23,6 +23,6 @@ public class User {
     private boolean userStatus;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name="designationId")
+    @JoinColumn(name="designation_id")
     private Designation designation;
 }

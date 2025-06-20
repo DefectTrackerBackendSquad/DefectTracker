@@ -20,10 +20,10 @@ public class DefectController {
 
     @GetMapping("/{id}")
     public ResponseEntity<StandardResponse> getDefectByDefectId(@PathVariable String id) {
-        Defect defect = defectService.getDefectByDefectId(id);
-        if (defect != null) {
+        DefectDto defectDto = defectService.getDefectByDefectId(id);
+        if (defectDto != null) {
             return ResponseEntity.ok(
-                    new StandardResponse("Success", "Retrieved successfully", defect, 200)
+                    new StandardResponse("Success", "Retrieved successfully", defectDto, 200)
             );
         }
         return ResponseEntity.status(HttpStatus.NOT_FOUND)

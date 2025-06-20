@@ -5,5 +5,5 @@ import com.example.defectTracker.entity.Defect;
 
 
 public interface DefectService {
-    Defect getDefectByDefectId(String id);
+    DefectDto getDefectByDefectId(String id);
 }
