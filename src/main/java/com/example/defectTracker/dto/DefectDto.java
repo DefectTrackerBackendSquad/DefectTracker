@@ -7,12 +7,11 @@ import javax.print.attribute.standard.Media;
 
 @Data
 public class DefectDto {
-    private String defectId;
 
-    private String description;
-    private int reOpenCount;
-    private Media attachment;
-    private String steps;
+//    private String description;
+//    private int reOpenCount;
+//    private Media attachment;
+//    private String steps;
     private ReleaseTestCase releaseTestCase;
     private User assignedBy;
     private User assignedTo;
