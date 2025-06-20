@@ -14,7 +14,6 @@ public class Defect {
     private Long id;
 
     private String defectId;
-
     private String description;
     private int reOpenCount;
     private Media attachment;
