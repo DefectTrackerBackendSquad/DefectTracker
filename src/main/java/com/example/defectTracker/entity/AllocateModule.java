@@ -12,7 +12,7 @@ public class AllocateModule {
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "module_id", nullable = false)
-    private Module module;
+    private AppModule module;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "sub_module_id", nullable = false)
