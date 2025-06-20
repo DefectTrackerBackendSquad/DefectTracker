@@ -7,7 +7,6 @@ import javax.print.attribute.standard.Media;
 
 @Data
 public class DefectDto {
-    private String defectId;
 
 //    private String description;
 //    private int reOpenCount;
