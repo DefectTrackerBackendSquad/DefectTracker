@@ -20,9 +20,6 @@ public class ReleaseTestCase {
     private Time testTime;
 
     private String testCaseStatus;
-    @OneToOne
-    @JoinColumn(name = "user_id")
-    private User user;
 
     @OneToOne
     @JoinColumn(name = "test_case_id")
