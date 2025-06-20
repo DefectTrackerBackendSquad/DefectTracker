@@ -1,11 +1,9 @@
 package com.example.defectTracker.service;
 
-import com.example.defectTracker.dto.DefectDto;
 import com.example.defectTracker.entity.Defect;
 import com.example.defectTracker.repository.DefectRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor // Lombok generates constructor
