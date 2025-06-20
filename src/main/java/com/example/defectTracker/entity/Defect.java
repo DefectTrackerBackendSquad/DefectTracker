@@ -20,38 +20,38 @@ public class Defect {
     private Media attachment;
     private String steps;
 
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+
+
+    @OneToOne
     @JoinColumn(name = "release_test_case_id")
     private ReleaseTestCase releaseTestCase;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "assigned_by")
     private User assignedBy;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "assigned_to")
     private User assignedTo;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "severity_id")
     private Severity severity;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "defect_status_id")
     private DefectStatus defectStatus;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "project_id")
     private Project project;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "priority_id")
     private Priority priority;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "type_id")
     private Type defectType;
-
-
 
 }
